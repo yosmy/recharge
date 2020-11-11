@@ -1,0 +1,4 @@
+/play/config/parameters.yml
+/play/var/cache
+/play/var/db
+/vendor/

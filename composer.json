@@ -1,0 +1,36 @@
+{
+    "name": "yosmy/recharge",
+    "description": "",
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
+        "yosmy/mongo": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yosmy\\Recharge\\": [
+                "src/exception",
+                "src/query",
+                "src/transfer"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yosmy\\Recharge\\Ding\\Test\\": [
+                "play/setup",
+                "play/src/audit/transfer",
+                "play/src/provider",
+                "play/src/transfer"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.yosmy.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
